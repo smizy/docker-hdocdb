@@ -31,7 +31,6 @@ zookeeper-1      entrypoint.sh -server 1 1 vnet   Up      2181/tcp, 2888/tcp, 38
 docker-compose exec regionserver-1 sh
 > /usr/local/hdocdb # jrunscript -cp lib/hdocdb-0.0.3.jar -f lib/hdocdb.js -f -
 
-nshorn>
 nashorn> db.mycoll.insert( { _id: "jdoe", first_name: "John", last_name: "Doe" } )
 nashorn> var doc = db.mycoll.find( { last_name: "Doe" } )[0]
 nashorn> print(doc)

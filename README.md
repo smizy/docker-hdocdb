@@ -27,7 +27,7 @@ namenode-1       entrypoint.sh namenode-1         Up      0.0.0.0:32782->50070/t
 regionserver-1   entrypoint.sh regionserver       Up      16020/tcp, 16030/tcp                
 zookeeper-1      entrypoint.sh -server 1 1 vnet   Up      2181/tcp, 2888/tcp, 3888/tcp
 
-# hdocdb shell via nshorn
+# hdocdb shell via nashorn
 docker-compose exec regionserver-1 sh
 > /usr/local/hdocdb # jrunscript -cp lib/hdocdb-0.0.3.jar -f lib/hdocdb.js -f -
 
